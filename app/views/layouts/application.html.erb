@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookbook3</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag :all %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+<p>
+  <%= link_to "Show all recipes", recipes_path %>
+  <%= link_to "Show all categories", categories_path %>
+</p>
+</body>
+</html>
